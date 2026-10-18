@@ -30,7 +30,7 @@ Windows 10 + Sysmon + Wazuh Agent → Wazuh Manager → Shuffle → VirusTotal /
 
 ## Project Report
 
-[Read the full project report](SOC-Automation-Project.pdf)
+[Read the full project report](SOC_AUTOMATION.pdf)
 
 The report documents the architecture, implementation, troubleshooting, test observations, and potential improvements.
 
