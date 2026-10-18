@@ -1,38 +1,54 @@
 # SOC Automation Project
 
-A hands-on Security Operations Center (SOC) automation lab exploring security monitoring, alert workflows, and incident response.
+**Automated Threat Detection, Enrichment and Response using Wazuh, Shuffle and TheHive**
 
-## Tools and Technologies
+A hands-on Security Operations Center (SOC) lab demonstrating how security monitoring, detection engineering, workflow automation, threat-intelligence enrichment, and analyst-approved response can work together.
 
-- Wazuh — Security monitoring and event analysis
-- Shuffle — Security workflow automation
-- TheHive — Security incident and case management
-- Windows 10 — Monitored endpoint
+## Architecture
 
-## Project Overview
+Windows 10 + Sysmon + Wazuh Agent → Wazuh Manager → Shuffle → VirusTotal / TheHive / Email → Analyst-approved response through Wazuh.
 
-This project documents a SOC lab environment, its architecture, and the integration of security tools for monitoring and incident handling.
+## Tools & Technologies
 
-## Documentation
+- **Wazuh:** SIEM/XDR, event analysis, custom detection rules and active response
+- **Sysmon:** Windows process-creation telemetry
+- **Shuffle:** SOAR workflow automation and API integrations
+- **TheHive 5:** Security alert and incident management
+- **VirusTotal:** File-hash threat-intelligence lookup
+- **MITRE ATT&CK:** Detection mapping to T1003 — OS Credential Dumping
+- **Windows 10 and Linux:** Lab endpoint and server environments
 
-- Architecture diagram
-- Implementation screenshots
-- Configuration notes
-- Workflow documentation
+## Key Features
 
-## Learning Objectives
+- Centralized Windows endpoint monitoring
+- Custom detection rule for Mimikatz execution
+- Automated forwarding of alerts from Wazuh to Shuffle
+- File-hash extraction and VirusTotal lookup
+- Automated alert creation in TheHive
+- Email notification with an analyst approval/denial step
+- Wazuh active-response integration for IP blocking
 
-- Understand SOC architecture and security monitoring.
-- Explore automated security alert workflows.
-- Learn how incident management tools support security operations.
-- Document practical blue-team lab work.
+## Project Report
 
-## Disclaimer
+[Read the full project report](SOC-Automation-Project.pdf)
 
-This project is for educational purposes. All testing should take place in an authorized lab environment.
+The report documents the architecture, implementation, troubleshooting, test observations, and potential improvements.
+
+## Key Learning Outcomes
+
+- SIEM operations and endpoint telemetry
+- Custom detection engineering
+- SOAR workflow development
+- Threat-intelligence integration
+- Incident management and response automation
+- Linux service and configuration management
+
+## Security Disclaimer
+
+This project was developed for educational purposes in a controlled lab environment. Security tools and response actions should only be tested on systems for which authorization has been granted.
 
 ## Author
 
-Bibash Bhandari
+**Bibash Bhandari**
 
-Cybersecurity learner interested in SOC operations, blue-team security, and automation.
+Cybersecurity | SOC Operations | Blue Team | Security Automation
